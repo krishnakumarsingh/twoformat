@@ -1,3 +1,37 @@
+@font-face {
+  font-family: "KaushanScript";
+  src: url(../fonts/Kaushan_Script/KaushanScript-Regular.ttf);
+}
+@font-face {
+  font-family: "MontserratBold";
+  src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: "RobotoBold";
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "MontserratRegular";
+  src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+.KaushanScript {
+  font-family: KaushanScript !important;
+}
+.MontserratBold {
+  font-family: MontserratBold !important;
+}
+.MontserratRegular {
+  font-family: MontserratRegular !important;
+}
+.RobotoBold {
+  font-family: RobotoBold !important;
+}
+.border-white {
+  border:1px solid #fff;
+}
+.text-white {
+  color: #fff;
+}
 body {
   background-image: url("../images/img1.jpeg");
   background-size: cover;
@@ -5,6 +39,18 @@ body {
 .mbr-table {
   display: table;
   width: 100%;
+}
+.navbar-dropdown {
+  left: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.45s ease;
+  z-index: 1030;
+}
+.navbar-dropdown.navbar-fixed-top {
+  position: fixed;
 }
 .navbar-dropdown .mbr-table-cell {
   height: 5.625rem;
@@ -54,6 +100,7 @@ body {
 .navbar-dropdown .navbar-logo, .navbar-dropdown .navbar-caption {
   display: inline-block;
   vertical-align: middle;
+  color: #fff;
 }
 .text-black {
   color: #535353 !important;
@@ -157,6 +204,7 @@ button, input, select, textarea {
   display: block;
   padding-top: .425rem;
   padding-bottom: .425rem;
+  color: #fff;
 }
 .nav-dropdown .link.dropdown-toggle::after {
   display: block;
@@ -212,6 +260,10 @@ button, input, select, textarea {
   display: table-cell;
   float: none;
   vertical-align: middle;
+}
+.nav-dropdown .nav-item.active a {
+  border-bottom: 1px solid #fce38a;
+  color: #fce38a;
 }
 .nav-dropdown .btn {
   font-size: 0.75rem;
@@ -278,6 +330,35 @@ button, input, select, textarea {
 }
 
 /*----------------------Slider---------------------*/
+.mbr-section {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mbr-section-full {
+  display: table;
+  height: 100vh;
+  padding-bottom: 0;
+  padding-top: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+.mbr-section-full .mbr-overlay {
+  min-height: 100vh;
+}
+.mbr-overlay {
+  background-color: #000;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
 .mbr-overlay ~ * {
   z-index: 2;
 }
@@ -288,4 +369,120 @@ button, input, select, textarea {
   padding-top: 0;
   position: relative;
   vertical-align: middle;
+}
+.mbr-section-full > .mbr-table-cell {
+  width: 100%;
+}
+.text-xs-center {
+  text-align: center!important;
+}
+.mbr-section-title {
+  margin-top: 0;
+}
+.mbr-section-hero .mbr-section-title {
+  color: #000000;;
+  margin-bottom: 1.6875rem;
+  font-size: 72px;
+  color: #ffffff;
+  font-family: "Kaushan Script";
+  font-weight: 400;
+  text-align: center;
+}
+.display-1 {
+  font-size: 6rem;
+}
+.display-1 {
+  font-size: 4.39rem;
+  font-weight: 600;
+  letter-spacing: -2px;
+  margin-bottom: 0.2843em;
+  margin-top: 3.9rem;
+}
+p.lead, .lead p {
+  font-size: 1.07rem;
+  font-weight: 300;
+  margin-bottom: 2.3125rem;
+}
+.mbr-section-hero .mbr-section-lead {
+  color: #000000;;
+  font-family: Lora;
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-top: 0em;
+  font-size: 150px;
+  line-height: 140px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+}
+.btn-sm, .lead a, .lead blockquote, .mbr-section-subtitle, .mbr-section-hero .mbr-section-lead, .mbr-cards .card-subtitle, .mbr-testimonial .card-block {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+}
+.btn, .c-indicator, .file-custom {
+  user-select: none;
+}
+.btn, .dropdown-header, .dropdown-item, .input-group-btn, .label, .table-reflow tbody {
+  white-space: nowrap;
+}
+.btn-secondary {
+  color: #000;
+  background-color: #fff;
+  border-color: #000;
+}
+.btn-group-lg>.btn, .btn-lg {
+  padding: .65rem 1.85rem;
+  font-size: 1.25rem;
+  line-height: 1.33333;
+  border-radius: 1.7rem;
+}
+.btn {
+  margin-bottom: 0.5rem;
+}
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 0.75rem 2.1875rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  border-radius: 3px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.btn-lg {
+  padding: 0.75rem 2.1874rem;
+  font-size: 0.9687rem;
+  line-height: 1.33333;
+  border-radius: 3px;
+}
+.btn-secondary {
+  background-color: #bfcecb;
+  border-color: #bfcecb;
+  box-shadow: none;
+  color: #fff;
+}
+.btn, .alert, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display-1, .display-2, .display-3, .display-4, .mbr-figure .mbr-figure-caption, .mbr-gallery-title, .mbr-map [data-state-details], .mbr-price {
+  font-family: 'Oxygen', sans-serif;
+}
+.btn-secondary {
+  background-color: #000000;
+  border-color: #000000;
+  color: #ffffff;
+}
+.btn, .dropdown-header, .dropdown-item, .input-group-btn, .label, .table-reflow tbody {
+  white-space: nowrap;
+}
+.btn {
+  margin-bottom: 0.5rem;
+}
+.btn-secondary-outline {
+  background: none;
+  border-color: #000000;
+  color: #000000;
+}
+.overlay-img {
+  background-image: url("../images/picture.png");
 }
