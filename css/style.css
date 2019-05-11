@@ -1,0 +1,291 @@
+body {
+  background-image: url("../images/img1.jpeg");
+  background-size: cover;
+}
+.mbr-table {
+  display: table;
+  width: 100%;
+}
+.navbar-dropdown .mbr-table-cell {
+  height: 5.625rem;
+}
+.mbr-table-cell {
+  display: table-cell;
+  float: none;
+  padding-bottom: 0;
+  padding-top: 0;
+  position: relative;
+  vertical-align: middle;
+}
+.navbar-brand {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+}
+.navbar-dropdown .navbar-brand {
+  float: none;
+  font-size: 0;
+  padding: 1.25rem 0;
+  position: relative;
+  transition: padding 0.25s ease;
+  white-space: nowrap;
+}
+.navbar-dropdown .navbar-brand::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.navbar-brand .text-black {
+  color: #000 !important;
+}
+
+.navbar-dropdown .navbar-caption, .navbar-dropdown .navbar-caption:hover {
+  color: inherit;
+  text-decoration: none;
+}
+.navbar-dropdown .navbar-caption {
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: 700;
+  white-space: normal;
+}
+.navbar-dropdown .navbar-logo, .navbar-dropdown .navbar-caption {
+  display: inline-block;
+  vertical-align: middle;
+}
+.text-black {
+  color: #535353 !important;
+}
+[role=button], a, area, button, input, label, select, summary, textarea {
+  touch-action: manipulation;
+}
+a {
+  color: #F1C050;
+  text-decoration: none;
+}
+a {
+  background-color: transparent;
+}
+.navbar-dropdown .mbr-table-cell {
+  height: 5.625rem;
+}
+
+.mbr-table-cell {
+  display: table-cell;
+  float: none;
+  padding-bottom: 0;
+  padding-top: 0;
+  position: relative;
+  vertical-align: middle;
+}
+.navbar-toggler {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .hidden-md-up {
+    display: none!important;
+  }
+}
+.pull-xs-right {
+  float: right!important;
+}
+.navbar-toggler {
+  padding: .5rem .75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background: 0 0;
+  border: 1px solid transparent;
+  border-radius: 1.4rem;
+}
+button, input, select, textarea {
+  margin: 0;
+  line-height: inherit;
+  border-radius: 0;
+}
+.navbar-dropdown .hamburger-icon {
+  content: "";
+  width: 16px;
+  -webkit-box-shadow: 0 -6px 0 1px, 0 0 0 1px, 0 6px 0 1px;
+  -moz-box-shadow: 0 -6px 0 1px,0 0 0 1px,0 6px 0 1px;
+  box-shadow: 0 -6px 0 1px, 0 0 0 1px, 0 6px 0 1px;
+}
+.nav-dropdown {
+  display: table !important;
+  font-family: "Montserrat";
+  font-size: 0.75rem;
+  font-weight: 700;
+  height: auto !important;
+}
+
+.pull-xs-right {
+  float: right!important;
+}
+@media (min-width: 768px) {
+  .navbar-toggleable-sm {
+    display: block!important;
+  }
+}
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.collapse {
+  display: none;
+}
+.breadcrumb, .carousel-indicators, .dropdown-menu, .media-list, .nav, .pager {
+  list-style: none;
+}
+.nav-dropdown .nav-item {
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
+}
+.nav-dropdown .link.dropdown-toggle {
+  margin: 0;
+  padding: 20px;
+  margin-right: 2.583em;
+}
+.nav-dropdown .link {
+  margin: 1.667em;
+  padding: 0;
+  transition: color .2s ease-in-out;
+}
+.navbar-nav .nav-link {
+  display: block;
+  padding-top: .425rem;
+  padding-bottom: .425rem;
+}
+.nav-dropdown .link.dropdown-toggle::after {
+  display: block;
+  margin-top: -0.1667em;
+  position: absolute;
+  right: 3.2em;
+  top: 50%;
+}
+.nav-dropdown .dropdown-menu {
+  border-radius: 0;
+  border: 0;
+  left: 0;
+  margin: 0;
+  padding-bottom: 1.25rem;
+  padding-top: 1.25rem;
+}
+.open>.dropdown-menu {
+  display: block;
+}
+/*.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 1rem;
+  color: #000;
+  text-align: left;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+}*/
+.navbar-nav .open>.dropdown-menu {
+  position: absolute;
+}
+.open>.nav-link {
+  background: #e6e6e6;
+}
+.btn-group>.btn-group, .btn-toolbar .btn-group, .btn-toolbar .input-group, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .dropdown-menu, .table-reflow thead, .table-reflow tr {
+  float: left;
+}
+.breadcrumb, .carousel-indicators, .dropdown-menu, .media-list, .nav, .pager {
+  list-style: none;
+}
+.nav-dropdown .nav-btn {
+  padding-left: 1rem;
+}
+.nav-dropdown .nav-item {
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
+}
+.nav-dropdown .btn {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-bottom: 0;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.btn, .dropdown-header, .dropdown-item, .input-group-btn, .label, .table-reflow tbody {
+  white-space: nowrap;
+}
+.btn {
+  margin-bottom: 0.5rem;
+}
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 0.75rem 2.1875rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  border-radius: 3px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.btn-black {
+  background-color: #535353;
+  border-color: #535353;
+  box-shadow: none;
+  color: #fff;
+}
+.btn-black-outline {
+  background: none;
+  border-color: #202020;
+  color: #202020;
+}
+.navbar-dropdown .navbar-close {
+  left: 0.6875rem;
+  position: fixed;
+  top: 0.75rem;
+  z-index: 1000;
+}
+.navbar-toggler {
+  position: relative;
+}
+.navbar-toggler {
+  padding: .5rem .75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background: 0 0;
+  border: 1px solid transparent;
+  border-radius: 1.4rem;
+}
+.navbar-dropdown .close-icon {
+  position: relative;
+  width: 21px;
+  height: 21px;
+  overflow: hidden;
+}
+.navbar-close .close-icon {
+  display: block;
+}
+
+/*----------------------Slider---------------------*/
+.mbr-overlay ~ * {
+  z-index: 2;
+}
+.mbr-table-cell {
+  display: table-cell;
+  float: none;
+  padding-bottom: 0;
+  padding-top: 0;
+  position: relative;
+  vertical-align: middle;
+}
