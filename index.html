@@ -7,9 +7,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./libs/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./libs/css/bootstrap.min.css" />
+		<link rel='stylesheet'
+			href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+			integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ'
+			crossorigin='anonymous'>
 		<link href="./css/libs1.css" rel="stylesheet" />
 		<link href="./css/style.css" rel="stylesheet" />
+		<link href="./css/parallax.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -18,7 +23,9 @@
 			<div class="mbr-table">
 				<div class="mbr-table-cell">
 					<div class="navbar-brand">
-						<a class="navbar-caption MontserratBold" href="#" title="2formatics">2formatics</a>
+						<a class="navbar-caption MontserratBold" href="#" title="2formatics">
+							<img alt="" src="./images/2formatics.png" width="90" />
+						</a>
 					</div>
 				</div>
 				<div class="mbr-table-cell">
@@ -27,10 +34,10 @@
 					</button>
 					<ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm MontserratBold" id="exCollapsingNavbar">
 						<li class="nav-item active">
-							<a class="nav-link link" href="#">About</a>
+							<a class="nav-link link" href="#about_us">About</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link link" href="#">
+							<a class="nav-link link" href="#services">
 								<span style="font-weight: normal;">Service</span>
 							</a>
 						</li>
@@ -49,9 +56,9 @@
 								<span style="font-weight: normal;">Contact</span>
 							</a>
 						</li>
-						<li class="nav-item nav-btn">
-							<a class="nav-link btn btn-black-outline btn-black" href="#">
-								Login
+						<li class="nav-item">
+							<a class="nav-link link" href="#">
+								<i class='fas fas fa-user'></i>
 							</a>
 						</li>
 					</ul>
@@ -62,7 +69,7 @@
 			</div>
 		</div>
 	</nav>
-	<section class="mbr-section mbr-section-hero mbr-section-full mbr-parallax-background mbr-section-with-arrow mbr-after-navbar">
+	<section class="mbr-section mbr-section-hero mbr-section-full mbr-parallax-background mbr-section-with-arrow mbr-after-navbar parallax d-none">
 		<div class="mbr-overlay overlay-img" style="opacity: 0.7; background-color: rgb(255, 255, 255);"></div>
 		<div class="mbr-table-cell">
 			<div class="container">
@@ -77,9 +84,198 @@
 			</div>
 		</div>
 	</section>
+	<section class="mbr-section mbr-section-hero mbr-section-full mbr-parallax-background mbr-section-with-arrow mbr-after-navbar parallax">
+		<div id="main_slide" class="carousel slide" data-ride="carousel">
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<li data-target="#demo" data-slide-to="2"></li>
+			</ul>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="./images/img2.jpeg"
+						alt=""
+						width="100%"
+						height="500"
+						class="d-none">
+					<div class="mbr-table-cell">
+						<div class="container">
+							<div class="row">
+									<div class="mbr-section col-md-10 ml-md-auto mr-md-auto text-xs-center">
+										<h1 class="mbr-section-title display-1 KaushanScript">Creative Template</h1>
+										<p class="mbr-section-lead lead Montserrat">Welcome<br>
+											to MoGo</p>
+										<div class="mbr-section-btn"><a class="btn btn-lg btn-secondary-outline border-white text-white btn-secondary" href="">LEARN MORE</a></div>
+									</div>
+							</div>
+						</div>
+					</div>   
+				</div>
+				<div class="carousel-item">
+					<img src="./images/img1.jpegg"
+						alt=""
+						width="100%"
+						height="500"
+						class="d-none">
+					<div class="mbr-table-cell">
+						<div class="container">
+							<div class="row">
+									<div class="mbr-section col-md-10 ml-md-auto mr-md-auto text-xs-center">
+										<h1 class="mbr-section-title display-1 KaushanScript">Creative Template</h1>
+										<p class="mbr-section-lead lead Montserrat">Welcome<br>
+											to MoGo</p>
+										<div class="mbr-section-btn"><a class="btn btn-lg btn-secondary-outline border-white text-white btn-secondary" href="">LEARN MORE</a></div>
+									</div>
+							</div>
+						</div>
+					</div>   
+				</div>
+				<div class="carousel-item">
+					<img src="./images/img1.jpeg"
+						alt=""
+						width="100%"
+						height="500"
+						class="d-none">
+					<div class="mbr-table-cell">
+						<div class="container">
+							<div class="row">
+									<div class="mbr-section col-md-10 ml-md-auto mr-md-auto text-xs-center">
+										<h1 class="mbr-section-title display-1 KaushanScript">Creative Template</h1>
+										<p class="mbr-section-lead lead Montserrat">Welcome<br>
+											to MoGo</p>
+										<div class="mbr-section-btn"><a class="btn btn-lg btn-secondary-outline border-white text-white btn-secondary" href="">LEARN MORE</a></div>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev d-none" href="#demo" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next d-none" href="#demo" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
+		</div>
+		<div class="mbr-overlay overlay-img" style="opacity: 0.7; background-color: rgb(255, 255, 255);"></div>
+	</section>
+	<section id="about_us" class="page-section">
+		<div class="mbr-section mbr-section__container article mbr-section-nopadding-b">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 w-100 header-sec">
+						<h2 class="mbr-section-title display-2 KaushanScript h2-head-sec">What we do ?</h2>
+						<h3 class="mbr-section-title display-2 Montserrat h3-head-sec">Story about us</h3>
+						<hr class="brdr" />
+						<p class="sec-para Roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+							magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+							consequat. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mbr-cards mbr-section mbr-section-nopadding-b">
+			<div class="container">
+				<div class="row">
+					<div class="card-group">
+						<div class="card mr-md-3 ml-md-3 rounded-0">
+							<div class="overlay-card-img-top">
+								<div class="text">Hello World</div>
+							</div>
+							<img class="card-img-top" src="./images/img1.jpeg" alt="Card image cap" />
+						</div>
+						<div class="card mr-md-3 ml-md-3 rounded-0">
+							<div class="overlay-card-img-top">
+								<div class="text">Hello World</div>
+							</div>
+							<img class="card-img-top" src="./images/img1.jpeg" alt="Card image cap" />
+						</div>
+						<div class="card mr-md-3 ml-md-3 rounded-0">
+							<div class="overlay-card-img-top">
+								<div class="text">Hello World</div>
+							</div>
+							<img class="card-img-top" src="./images/img1.jpeg" alt="Card image cap" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="counter_jobs" class="page-section mbr-cards mbr-section">
+		<div class="counter-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-3 col-sm-3">
+						<div class="number-wrap Montserrat">
+							<h2>42</h2>
+							<p>Web Design Projects</p>
+						</div>
+					</div>
+					<div class="col-xs-3 col-sm-3">
+						<div class="number-wrap Montserrat">
+							<h2>123</h2>
+							<p>happy client</p>
+						</div>
+					</div>
+					<div class="col-xs-3 col-sm-3">
+						<div class="number-wrap Montserrat">
+							<h2>15</h2>
+							<p>award winner</p>
+						</div>
+					</div>
+					<div class="col-xs-3 col-sm-3">
+						<div class="number-wrap Montserrat">
+							<h2>99</h2>
+							<p>cup of coffee</p>
+					</div>
+			</div>
+		</div>
+	</section>
+	<section id="services" class="page-section">
+		<div class="mbr-section mbr-section__container article mbr-section-nopadding-b">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 w-100 header-sec">
+						<h2 class="mbr-section-title display-2 KaushanScript h2-head-sec">We work with</h2>
+						<h3 class="mbr-section-title display-2 Montserrat h3-head-sec">Amazing services</h3>
+						<hr class="brdr" />
+						<p class="sec-para Roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+							magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+							consequat. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mbr-cards mbr-section mbr-section-nopadding-b">
+			<div class="container">
+				<div class="row">
+					<div class="card-group">
+						<div class="card mr-md-3 ml-md-3 rounded-0">
+							<div class="overlay-card-img-top">
+								<div class="text">Hello World</div>
+							</div>
+							<img class="card-img-top" src="./images/img1.jpeg" alt="Card image cap" />
+						</div>
+						<div class="card mr-md-3 ml-md-3 rounded-0">
+							<div class="overlay-card-img-top">
+								<div class="text">Hello World</div>
+							</div>
+							<img class="card-img-top" src="./images/img1.jpeg" alt="Card image cap" />
+						</div>
+						<div class="card mr-md-3 ml-md-3 rounded-0">
+							<div class="overlay-card-img-top">
+								<div class="text">Hello World</div>
+							</div>
+							<img class="card-img-top" src="./images/img1.jpeg" alt="Card image cap" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 </body>
 <script src="./libs/js/jquery-3.3.1.min.js"></script>
 <script src="./libs/js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>
+<script src="./js/script.js"></script>
 
 </html>

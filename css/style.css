@@ -33,8 +33,9 @@
   color: #fff;
 }
 body {
-  background-image: url("../images/img1.jpeg");
-  background-size: cover;
+  /*background-image: url("../images/img1.jpeg");
+  background-size: cover;*/
+  margin-bottom: 150px;
 }
 .mbr-table {
   display: table;
@@ -72,7 +73,7 @@ body {
 .navbar-dropdown .navbar-brand {
   float: none;
   font-size: 0;
-  padding: 1.25rem 0;
+  padding: 0.25rem 0;
   position: relative;
   transition: padding 0.25s ease;
   white-space: nowrap;
@@ -88,7 +89,7 @@ body {
 }
 
 .navbar-dropdown .navbar-caption, .navbar-dropdown .navbar-caption:hover {
-  color: inherit;
+  color: #fff;
   text-decoration: none;
 }
 .navbar-dropdown .navbar-caption {
@@ -206,6 +207,10 @@ button, input, select, textarea {
   padding-bottom: .425rem;
   color: #fff;
 }
+.navbar-nav .nav-item.active .nav-link {
+  border-bottom: 1px solid #fce38a;
+  color: #fce38a;
+}
 .nav-dropdown .link.dropdown-toggle::after {
   display: block;
   margin-top: -0.1667em;
@@ -260,10 +265,6 @@ button, input, select, textarea {
   display: table-cell;
   float: none;
   vertical-align: middle;
-}
-.nav-dropdown .nav-item.active a {
-  border-bottom: 1px solid #fce38a;
-  color: #fce38a;
 }
 .nav-dropdown .btn {
   font-size: 0.75rem;
@@ -328,7 +329,18 @@ button, input, select, textarea {
 .navbar-close .close-icon {
   display: block;
 }
-
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display-1, .display-2, .display-3, .display-4 {
+  font-family: 'Montserrat', sans-serif;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.display-2 {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-bottom: 1.5625rem;
+  margin-top: 3.5rem;
+}
 /*----------------------Slider---------------------*/
 .mbr-section {
   position: relative;
@@ -348,6 +360,16 @@ button, input, select, textarea {
 }
 .mbr-section-full .mbr-overlay {
   min-height: 100vh;
+}
+.mbr-section-nopadding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.mbr-section-nopadding-t {
+  padding-top: 0;
+}
+.mbr-section-nopadding-b {
+  padding-bottom: 0;
 }
 .mbr-overlay {
   background-color: #000;
@@ -485,4 +507,104 @@ p.lead, .lead p {
 }
 .overlay-img {
   background-image: url("../images/picture.png");
+}
+
+/*-------------carousel-----------*/
+#main_slide.carousel {
+  z-index: 9;
+}
+#main_slide.carousel .mbr-table-cell {
+  display: block;
+}
+#main_slide .carousel-indicators li {
+  width: calc(80% / 3);
+}
+
+/*---------Second block--------*/
+.header-sec:after {
+  border: 1px solid red;
+}
+.h2-head-sec {
+  font-size: 24px;
+  color: #333333;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0;
+  margin-bottom: 10px;
+}
+.h3-head-sec {
+  font-size: 30px;
+  color: #333333;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+.brdr {
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  border-radius: 50px;
+}
+.sec-para {
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  font-weight: 400;
+  text-align: center;
+  width: 960px;
+  margin: auto;
+}
+#about_us .card-img-top {
+  height: 180px;
+}
+#about_us .card .overlay-card-img-top {
+  background-image: url("../images/picture.png");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: calc(45%/2);
+  color: #fff;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+#about_us .card:hover .overlay-card-img-top {
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.counter-bg {
+  background: #95e1d3;
+  padding: 70px 0;
+}
+.number-wrap {
+  color: #fff;
+  text-align: center;
+}
+.number-wrap h2 {
+  font-size: 72px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+}
+.number-wrap p {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: center;
 }
