@@ -6,7 +6,7 @@
     <title>Home</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="./libs/css/bootstrap.min.css" />
 		<link rel='stylesheet'
 			href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
@@ -34,7 +34,7 @@
 					</button>
 					<ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm MontserratBold" id="exCollapsingNavbar">
 						<li class="nav-item active">
-							<a class="nav-link link" href="#about_us">About</a>
+							<a class="nav-link link" href="#about_us">About us</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link link" href="#services">
@@ -42,18 +42,8 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link link" href="#">
-								<span style="font-weight: normal;">Work</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link link" href="#">
-								<span style="font-weight: normal;">Blog</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link link" href="#">
-								<span style="font-weight: normal;">Contact</span>
+							<a class="nav-link link" href="#contact_us">
+								<span style="font-weight: normal;">Contact us</span>
 							</a>
 						</li>
 						<li class="nav-item">
@@ -69,27 +59,12 @@
 			</div>
 		</div>
 	</nav>
-	<section class="mbr-section mbr-section-hero mbr-section-full mbr-parallax-background mbr-section-with-arrow mbr-after-navbar parallax d-none">
-		<div class="mbr-overlay overlay-img" style="opacity: 0.7; background-color: rgb(255, 255, 255);"></div>
-		<div class="mbr-table-cell">
-			<div class="container">
-				<div class="row">
-						<div class="mbr-section col-md-10 ml-md-auto mr-md-auto text-xs-center">
-							<h1 class="mbr-section-title display-1 KaushanScript">Creative Template</h1>
-							<p class="mbr-section-lead lead Montserrat">Welcome<br>
-								to MoGo</p>
-							<div class="mbr-section-btn"><a class="btn btn-lg btn-secondary-outline border-white text-white btn-secondary" href="">LEARN MORE</a></div>
-						</div>
-				</div>
-			</div>
-		</div>
-	</section>
 	<section class="mbr-section mbr-section-hero mbr-section-full mbr-parallax-background mbr-section-with-arrow mbr-after-navbar parallax">
 		<div id="main_slide" class="carousel slide" data-ride="carousel">
 			<ul class="carousel-indicators">
-				<li data-target="#demo" data-slide-to="0" class="active"></li>
-				<li data-target="#demo" data-slide-to="1"></li>
-				<li data-target="#demo" data-slide-to="2"></li>
+				<li data-target="#main_slide" data-slide-to="0" class="active"></li>
+				<li data-target="#main_slide" data-slide-to="1"></li>
+				<li data-target="#main_slide" data-slide-to="2"></li>
 			</ul>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
@@ -150,10 +125,10 @@
 					</div>
 				</div>
 			</div>
-			<a class="carousel-control-prev d-none" href="#demo" data-slide="prev">
+			<a class="carousel-control-prev d-none" href="#main_slide" data-slide="prev">
 				<span class="carousel-control-prev-icon"></span>
 			</a>
-			<a class="carousel-control-next d-none" href="#demo" data-slide="next">
+			<a class="carousel-control-next d-none" href="#main_slide" data-slide="next">
 				<span class="carousel-control-next-icon"></span>
 			</a>
 		</div>
@@ -163,7 +138,7 @@
 		<div class="mbr-section mbr-section__container article mbr-section-nopadding-b">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 w-100 header-sec">
+					<div class="col-sm-12 w-100 header-sec">
 						<h2 class="mbr-section-title display-2 KaushanScript h2-head-sec">What we do ?</h2>
 						<h3 class="mbr-section-title display-2 Montserrat h3-head-sec">Story about us</h3>
 						<hr class="brdr" />
@@ -177,20 +152,20 @@
 		<div class="mbr-cards mbr-section mbr-section-nopadding-b">
 			<div class="container">
 				<div class="row">
-					<div class="card-group">
-						<div class="card mr-md-3 ml-md-3 rounded-0">
+					<div class="card-group col-sm-12">
+						<div class="card mr-md-3 ml-md-3 mr-sm-1 ml-sm-1 col-xs-12 rounded-0">
 							<div class="overlay-card-img-top">
 								<div class="text">Hello World</div>
 							</div>
 							<img class="card-img-top" src="./images/img1.jpeg" alt="Card image cap" />
 						</div>
-						<div class="card mr-md-3 ml-md-3 rounded-0">
+						<div class="card mr-md-3 ml-md-3 mr-sm-1 ml-sm-1 col-xs-12 rounded-0">
 							<div class="overlay-card-img-top">
 								<div class="text">Hello World</div>
 							</div>
 							<img class="card-img-top" src="./images/img1.jpeg" alt="Card image cap" />
 						</div>
-						<div class="card mr-md-3 ml-md-3 rounded-0">
+						<div class="card mr-md-3 ml-md-3 mr-sm-1 ml-sm-1 col-xs-12 rounded-0">
 							<div class="overlay-card-img-top">
 								<div class="text">Hello World</div>
 							</div>
@@ -201,7 +176,8 @@
 			</div>
 		</div>
 	</section>
-	<section id="counter_jobs" class="page-section mbr-cards mbr-section">
+	<hr/>
+	<section id="counter_jobs" class="page-section mbr-cards mbr-section mbr-section-nopadding-b">
 		<div class="counter-bg">
 			<div class="container">
 				<div class="row">
@@ -231,11 +207,12 @@
 			</div>
 		</div>
 	</section>
+	<hr/>
 	<section id="services" class="page-section">
 		<div class="mbr-section mbr-section__container article mbr-section-nopadding-b">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 w-100 header-sec">
+					<div class="col-sm-12 w-100 header-sec">
 						<h2 class="mbr-section-title display-2 KaushanScript h2-head-sec">We work with</h2>
 						<h3 class="mbr-section-title display-2 Montserrat h3-head-sec">Amazing services</h3>
 						<hr class="brdr" />
@@ -249,20 +226,20 @@
 		<div class="mbr-cards mbr-section mbr-section-nopadding-b">
 			<div class="container">
 				<div class="row">
-					<div class="card-group">
-						<div class="card mr-md-3 ml-md-3 rounded-0">
+					<div class="card-group col-sm-12">
+						<div class="card mr-md-3 ml-md-3 mr-sm-1 ml-sm-1 col-xs-12 rounded-0">
 							<div class="overlay-card-img-top">
 								<div class="text">Hello World</div>
 							</div>
 							<img class="card-img-top" src="./images/img1.jpeg" alt="Card image cap" />
 						</div>
-						<div class="card mr-md-3 ml-md-3 rounded-0">
+						<div class="card mr-md-3 ml-md-3 mr-sm-1 ml-sm-1 col-xs-12 rounded-0">
 							<div class="overlay-card-img-top">
 								<div class="text">Hello World</div>
 							</div>
 							<img class="card-img-top" src="./images/img1.jpeg" alt="Card image cap" />
 						</div>
-						<div class="card mr-md-3 ml-md-3 rounded-0">
+						<div class="card mr-md-3 ml-md-3 mr-sm-1 ml-sm-1 col-xs-12 rounded-0">
 							<div class="overlay-card-img-top">
 								<div class="text">Hello World</div>
 							</div>
@@ -273,6 +250,68 @@
 			</div>
 		</div>
 	</section>
+	<hr/>
+	<section id="contact_us" class="page-section">
+		<div class="mbr-section mbr-section__container article mbr-section-nopadding-b">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 w-100 header-sec">
+						<h2 class="mbr-section-title display-2 KaushanScript h2-head-sec">We here for helping you . . </h2>
+						<h3 class="mbr-section-title display-2 Montserrat h3-head-sec">CONTACT FORM</h3>
+						<hr class="brdr" />
+						<p class="sec-para Roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+							magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+							consequat. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mbr-section mbr-section-nopadding">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-lg-10 offset-lg-1" data-form-type="formoid">
+						<div data-form-alert="true">
+							<div hidden="" data-form-alert-success="true" class="alert alert-form alert-success text-xs-center">Thanks for filling out form!</div>
+						</div>
+						<form action="https://mobirise.com/" method="post" data-form-title="CONTACT FORM">
+							<input type="hidden" value="" data-form-email="true" class="hidden animated">
+							<div class="row row-sm-offset">
+								<div class="col-xs-12 col-md-4">
+									<div class="form-group">
+										<label class="form-control-label" for="form1-2h-name">Name<span class="form-asterisk">*</span></label>
+										<input type="text" class="form-control" name="name" required="" data-form-field="Name" id="form1-2h-name">
+									</div>
+								</div>
+								<div class="col-xs-12 col-md-4">
+									<div class="form-group">
+										<label class="form-control-label" for="form1-2h-email">Email<span class="form-asterisk">*</span></label>
+										<input type="email" class="form-control" name="email" required="" data-form-field="Email" id="form1-2h-email">
+									</div>
+								</div>
+								<div class="col-xs-12 col-md-4">
+									<div class="form-group">
+										<label class="form-control-label" for="form1-2h-phone">Phone</label>
+										<input type="tel" class="form-control" name="phone" data-form-field="Phone" id="form1-2h-phone">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+									<label class="form-control-label" for="form1-2h-message">Message</label>
+									<textarea class="form-control" name="message" rows="7" data-form-field="Message" id="form1-2h-message"></textarea>
+							</div>
+							<div>
+								<button type="submit" class="btn btn-black">
+									<span class="btn-text">CONTACT US</span>
+									<i class="btn-loader"></i>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr/>
 </body>
 <script src="./libs/js/jquery-3.3.1.min.js"></script>
 <script src="./libs/js/bootstrap.min.js"></script>
