@@ -1,5 +1,15 @@
-$("#main_slide").find('.carousel-inner .carousel-item.active img').css({'visibility': 'hidden'});
-$("#main_slide").closest('.parallax').css({'background-image': 'url("./images/img1.jpeg")'});
+
+$('#main_slide .carousel-item').each(function(i, j) {
+  console.log(i, j);
+  var vImgSrc = $(j).find('img').attr('src');
+  $(j).find('img').css({'visibility': 'hidden'});
+  $(j).css({'background-image': 'url("' + vImgSrc + '")'});  
+});
+$('.card-body.hide').hide();
+$('.card-body').on('click', '.btn', function() {
+  $('.card-body').toogle();
+});
+
 var scroll = $(window).scrollTop();
 var abtUs = $("#about_us").offset().top;
 if(scroll > 100) {
@@ -24,16 +34,17 @@ $(window).scroll(function (event) {
 });
 
 $(document).ready(function() {
-  $(".nav-item").click(function(e) {
-    if ($(this).find('a').attr("href").charAt(0) == "#") {
+  $("a").click(function(e) {
+    if ($(this).hasClass('nav-link') && $(this).attr("href").charAt(0) == "#") {
       e.preventDefault();
-      $(this).addClass("active").siblings().removeClass("active");
+      $(this).parent().addClass("active").siblings().removeClass("active");
       $("html, body").stop();
       $("html, body").animate({
-        scrollTop: $($(this).find('a').attr("href")).offset().top,
+        scrollTop: $($(this).attr("href")).offset().top,
       }, 1400);
     } else {
-      $($(this)).find('a').attr("target", "_blank");
+      $('.nav-link').parent().removeClass("active");
+      $($(this)).attr("target", "_blank");
     }
   })
 });
