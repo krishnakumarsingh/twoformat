@@ -32,6 +32,9 @@
 .text-white {
   color: #fff;
 }
+.text-yellow {
+  color: #F1C050;
+}
 body {
   /*background-image: url("../images/img1.jpeg");
   background-size: cover;*/
@@ -697,9 +700,9 @@ main_slide.carousel {
   min-height: 3.5em;
   padding: 0.5em 1.07em 0.5em;
 }
-.form-control, .form-control:focus {
+/*.form-control, .form-control:focus {
   border: 1px solid #e8e8e8;
-}
+}*/
 .nav-dropdown-sm.collapsing, .nav-dropdown-sm.collapse.in {
   transform: translateX(0);
   -ms-transform: translateX(0);
@@ -882,10 +885,10 @@ section + hr {
   margin-bottom: 1rem;
 }
 
-.form-label-group input {
+/*.form-label-group input {
   height: auto;
   border-radius: 2rem;
-}
+}*/
 
 .form-label-group>input,
 .form-label-group>label {
