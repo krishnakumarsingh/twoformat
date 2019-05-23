@@ -36,17 +36,21 @@ $(function() {
 
   $(document).ready(function() {
     $("a").click(function(e) {
+      var offsetTop = 0;// = $($(this).attr("href")).offset().top;
+      var navBar = 0;// = $('.navbar').height();
       if ($(this).hasClass('nav-link') && $(this).attr("href").charAt(0) == "#" && $(this).attr("href").substr(1).length > 0) {
+        offsetTop = $($(this).attr("href")).offset().top;
+        navBar = $('.navbar').height();
         e.preventDefault();
         $(this).parent().addClass("active").siblings().removeClass("active");
-        $("html, body").stop();
-        $("html, body").animate({
-          scrollTop: $($(this).attr("href")).offset().top - $('.navbar').height(),
-        }, 1400);
       } else {
         $('.nav-link').parent().removeClass("active");
-        $($(this)).attr("target", "_blank");
+        //$($(this)).attr("target", "_blank");
       }
+      $("html, body").stop();
+      $("html, body").animate({
+        scrollTop: offsetTop - navBar,
+      }, 1400);
     })
   });
 
@@ -68,4 +72,7 @@ $(function() {
 
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
   }
+  setTimeout(function(){
+    $('.carousel-item').eq(0).addClass('active');
+  }, 1000);
 });

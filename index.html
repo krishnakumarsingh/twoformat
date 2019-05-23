@@ -12,18 +12,16 @@
 			href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
 			integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ'
 			crossorigin='anonymous'>
-		<link href="./css/libs1.css" rel="stylesheet" />
 		<link href="./css/style.css" rel="stylesheet" />
 		<link href="./css/parallax.css" rel="stylesheet" />
 </head>
-
 <body>
 	<nav class="navbar navbar-dropdown navbar-fixed-top">
 		<div class="container">
 			<div class="mbr-table">
 				<div class="mbr-table-cell">
 					<div class="navbar-brand">
-						<a class="navbar-caption MontserratBold" href="#" title="2formatics">
+						<a id="formatics" class="navbar-caption MontserratBold" href="#formatics" title="2formatics">
 							<img alt="" src="./images/2formatics-h.png" width="90" />
 						</a>
 					</div>
@@ -48,7 +46,7 @@
 						</li>
 						<li class="nav-item">
 							<a class="nav-link link" href="#" data-toggle="modal" data-target="#myModal">
-								<i class='fas fas fa-user'></i>
+								<i class='fas fas fa-user'></i> &nbsp; &nbsp;Login
 							</a>
 						</li>
 					</ul>
@@ -76,12 +74,14 @@
 					<div class="mbr-table-cell">
 						<div class="container">
 							<div class="row">
+								<div class="mbr-section col-md-10 ml-md-auto mr-md-auto text-xs-center">
 									<div class="mbr-section col-md-10 ml-md-auto mr-md-auto text-xs-center">
-										<h1 class="mbr-section-title display-1 KaushanScript">Creative Template1</h1>
+										<h1 class="mbr-section-title display-1 KaushanScript">Creative Template2</h1>
 										<p class="mbr-section-lead lead Montserrat">Welcome<br>
 											to MoGo</p>
 										<div class="mbr-section-btn"><a class="btn btn-lg btn-secondary-outline border-white text-white btn-secondary" href="">LEARN MORE</a></div>
 									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -96,12 +96,20 @@
 					<div class="mbr-table-cell">
 						<div class="container">
 							<div class="row">
-									<div class="mbr-section col-md-10 ml-md-auto mr-md-auto text-xs-center">
-										<h1 class="mbr-section-title display-1 KaushanScript">Creative Template2</h1>
-										<p class="mbr-section-lead lead Montserrat">Welcome<br>
-											to MoGo</p>
-										<div class="mbr-section-btn"><a class="btn btn-lg btn-secondary-outline border-white text-white btn-secondary" href="">LEARN MORE</a></div>
-									</div>
+									<ul class='circle-container'>
+										<li>User</li>
+										<li>Influencers</li>
+										<li>Deciders</li>
+										<li>Approvers</li>
+										<li>Buyers</li>
+										<li>Gatekeepers</li>
+										<li>Initiators</li>
+										<li id="circle">
+											<div>
+												<span>Buying Center</span>
+											</div>
+										</li>
+									</ul>
 							</div>
 						</div>
 					</div>
@@ -141,9 +149,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12 w-100 header-sec">
-						<h2 class="mbr-section-title display-2 KaushanScript h2-head-sec">What we do ?</h2>
+						<h2 class="mbr-section-title display-2 KaushanScript h2-head-sec">
+							What we do ?
+							<hr class="brdr" />
+						</h2>
 						<h3 class="mbr-section-title display-2 Montserrat h3-head-sec">Story about us</h3>
-						<hr class="brdr" />
 						<p class="sec-para Roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
 							magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
 							consequat. </p>
@@ -215,9 +225,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12 w-100 header-sec">
-						<h2 class="mbr-section-title display-2 KaushanScript h2-head-sec">We work with</h2>
+						<h2 class="mbr-section-title display-2 KaushanScript h2-head-sec">
+							We work with
+							<hr class="brdr" />
+						</h2>
 						<h3 class="mbr-section-title display-2 Montserrat h3-head-sec">Amazing services</h3>
-						<hr class="brdr" />
 						<p class="sec-para Roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
 							magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
 							consequat. </p>
@@ -253,25 +265,53 @@
 		</div>
 	</section>
 	<hr/>
+	<br/>
+	<br/>
 	<section id="contact_us" class="page-section">
-		<div class="mbr-section mbr-section__container article mbr-section-nopadding-b">
+		<div class="mbr-section mbr-section__container article mbr-footer">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12 w-100 header-sec">
-						<h2 class="mbr-section-title display-2 KaushanScript h2-head-sec">We here for helping you . . </h2>
-						<h3 class="mbr-section-title display-2 Montserrat h3-head-sec">CONTACT FORM</h3>
-						<hr class="brdr" />
-						<p class="sec-para Roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+						<h2 class="mbr-section-title display-2 KaushanScript h2-head-sec text-white">
+							We here for helping you . . 
+							<hr class="brdr" />
+						</h2>
+						<h3 class="mbr-section-title display-2 Montserrat h3-head-sec text-white">CONTACT FORM</h3>
+						<p class="sec-para Roboto text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
 							magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
 							consequat. </p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="mbr-section mbr-section-nopadding">
+		<div id="map" class="mbr-map"></div>
+		<div class="mbr-section mbr-section__container article mbr-section-nopadding-b mbr-footer">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-12 col-lg-10 offset-lg-1" data-form-type="formoid">
+					<div class="col-sm-12 header-sec">
+						<!-- <div class="mbr-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=place_id:ChIJn6wOs6lZwokRLKy1iqRcoKw" allowfullscreen=""></iframe></div> -->
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mbr-section mbr-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 header-sec mbr-footer-content">
+						<p class="RobotoBold">
+							<strong class="Roboto">Office 1 Address</strong><br>
+							1234 Street Name<br>
+							City, AA 99999<br><br><br>
+							<strong class="Roboto">Office 2 Address</strong><br>
+							1234 Street Name<br>
+							City, AA 99999<br><br><br>
+							<strong class="Roboto">Contacts</strong><br>
+							Email: support@mobirise.com<br>
+							Phone: +1 (0) 000 0000 001<br>
+							Fax: +1 (0) 000 0000 002</p>
+					</div>		
+					<div class="col-sm-8" data-form-type="formoid">
 						<div data-form-alert="true">
 							<div hidden="" data-form-alert-success="true" class="alert alert-form alert-success text-xs-center">Thanks for filling out form!</div>
 						</div>
@@ -280,25 +320,25 @@
 							<div class="row row-sm-offset">
 								<div class="col-xs-12 col-md-4">
 									<div class="form-group">
-										<label class="form-control-label" for="form1-2h-name">Name<span class="form-asterisk">*</span></label>
+										<label class="form-control-label text-white" for="form1-2h-name">Name<span class="form-asterisk">*</span></label>
 										<input type="text-card" class="form-control" name="name" required="" data-form-field="Name" id="form1-2h-name">
 									</div>
 								</div>
 								<div class="col-xs-12 col-md-4">
 									<div class="form-group">
-										<label class="form-control-label" for="form1-2h-email">Email<span class="form-asterisk">*</span></label>
+										<label class="form-control-label text-white" for="form1-2h-email">Email<span class="form-asterisk">*</span></label>
 										<input type="email" class="form-control" name="email" required="" data-form-field="Email" id="form1-2h-email">
 									</div>
 								</div>
 								<div class="col-xs-12 col-md-4">
 									<div class="form-group">
-										<label class="form-control-label" for="form1-2h-phone">Phone</label>
+										<label class="form-control-label text-white" for="form1-2h-phone">Phone</label>
 										<input type="tel" class="form-control" name="phone" data-form-field="Phone" id="form1-2h-phone">
 									</div>
 								</div>
 							</div>
 							<div class="form-group">
-									<label class="form-control-label" for="form1-2h-message">Message</label>
+									<label class="form-control-label text-white" for="form1-2h-message">Message</label>
 									<textarea class="form-control" name="message" rows="7" data-form-field="Message" id="form1-2h-message"></textarea>
 							</div>
 							<div>
@@ -314,6 +354,11 @@
 		</div>
 	</section>
 	<hr/>
+	<footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-2p" style="background-color: rgb(0, 0, 0); padding-top: 1.75rem; padding-bottom: 1.75rem;">
+		<div class="container">
+			<p class="text-xs-center text-white">Copyright (c) 2019 2Formatics | <a href="license.txt" class="text-white">License</a></p>
+		</div>
+	</footer>
 	<div class="modal" id="myModal">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -396,6 +441,8 @@
 </body>
 <script src="./libs/js/jquery-3.3.1.min.js"></script>
 <script src="./libs/js/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
 <script src="./js/script.js"></script>
+<script src="./js/custom-map.js"></script>
 
 </html>
