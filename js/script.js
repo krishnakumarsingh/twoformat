@@ -10,7 +10,8 @@ $(function() {
     console.log(i, j);
     var vImgSrc = $(j).find('img').attr('src');
     $(j).find('img').css({'visibility': 'hidden'});
-    $(j).css({'background-image': 'url("' + vImgSrc + '")'});  
+    $(j).css({'background': '#da3b3b'});
+    //$(j).css({'background-image': 'url("' + vImgSrc + '")'});  
   });
 
   if(scroll > 100) {
