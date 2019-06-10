@@ -10,7 +10,14 @@ $(function() {
     console.log(i, j);
     var vImgSrc = $(j).find('img').attr('src');
     $(j).find('img').css({'visibility': 'hidden'});
-    $(j).css({'background': '#da3b3b'});
+    if(!$(j).hasClass('slider-2')){
+      $(j).css({'background': '#3d566e'});
+    } else {
+      /* $(j).find('.overlay-img').css({
+        'background-image': 'url(./images/data-graph.jpg)',
+        'background-size': 'cover'
+      }); */
+    }
     //$(j).css({'background-image': 'url("' + vImgSrc + '")'});  
   });
 

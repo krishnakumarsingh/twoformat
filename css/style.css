@@ -1004,21 +1004,44 @@ section + hr {
 }
 
 /*--------------------Slider 1--------------------*/
+.animated-text {
+  opacity: 0;
+}
+.parallax.active .animated-text {
+  opacity: 1;
+}
+.parallax.slider-2.active {
+  background-image: url(../images/data-graph.jpg);
+  background-position: 0 20%;
+}
+.slider-2.active .overlay-img {
+  opacity: 0.1;
+  background-color: transparent;
+}
 .carousel-item.active .animated-text {
-
 	animation-duration: 20s;
 	animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-name: anim-1;
 }
 @keyframes anim-1 {
 	0%, 8.3% { left: -100%; opacity: 0; }
   8.3%, 100% { left: 0%; opacity: 1; }
 }
+.carousel-item.active .animated-text-right {
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-name: anim-right-1;
+}
+@keyframes anim-right-1 {
+	0%, 8.3% { right: -100%; opacity: 0; }
+  8.3%, 100% { right: 0%; opacity: 1; }
+}
 .carousel-item.active .animated-text-2 {
 	animation-duration: 20s;
 	animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-name: anim-2;
 }
 @keyframes anim-2 {
@@ -1202,7 +1225,7 @@ section + hr {
 .carousel-item.active .circle-container > * {
   -webkit-animation-duration: 5.5s;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: 1;
 }
 .circle-container > *:nth-of-type(1) {
   -webkit-transform: rotate(0deg) translate(3em) rotate(0deg);
