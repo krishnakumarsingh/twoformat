@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./libs/css/bootstrap.min.css" />
+		<!-- <link rel='stylesheet'
+			href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+			integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ'
+			crossorigin='anonymous'> -->
+		<link href="./css/style.css" rel="stylesheet" />
+		<link href="./css/parallax.css" rel="stylesheet" />
+</head>
+<body>
+	<nav class="navbar navbar-dropdown navbar-fixed-top">
+		<div class="container">
+			<div class="mbr-table">
+				<div class="mbr-table-cell">
+					<div class="navbar-brand">
+						<a id="formatics" class="navbar-caption MontserratBold" href="#formatics" title="2formatics">
+							<img alt="" src="./images/2formatics-h.png" width="90" />
+						</a>
+					</div>
+				</div>
+				<div class="mbr-table-cell">
+					<button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+						<div class="hamburger-icon"></div>
+					</button>
+					<ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm MontserratBold" id="exCollapsingNavbar">
+						<li class="nav-item">
+							<a class="nav-link link" href="#about_us">About us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link link" href="#services">
+								<span style="font-weight: normal;">Service</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link link" href="#contact_us">
+								<span style="font-weight: normal;">Contact us</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link link" href="#" data-toggle="modal" data-target="#myModal">
+								<i class='fas fas fa-user'></i> &nbsp; &nbsp;Login
+							</a>
+						</li>
+					</ul>
+					<button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+						<div class="close-icon"></div>
+					</button>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<section class="mbr-section mbr-section-hero mbr-section-full mbr-parallax-background mbr-section-with-arrow mbr-after-navbar parallax1">
+		Here!!
+	</section>
+	<hr/>
+	<footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-2p" style="background-color: rgb(0, 0, 0); padding-top: 1.75rem; padding-bottom: 1.75rem;">
+		<div class="container">
+			<p class="text-xs-center text-white mb-0">Copyright (c) 2019 2Formatics | <a href="license.txt" class="text-white">License</a></p>
+		</div>
+	</footer>
+	<div class="modal" id="myModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="row card card-signin">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<div class="card-body login">
+									<h5 class="card-title text-center">Login</h5>
+									<form class="form-signin">
+										<div class="form-label-group">
+											<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+											<label for="inputEmail">Email address</label>
+										</div>
+			
+										<div class="form-label-group">
+											<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+											<label for="inputPassword">Password</label>
+										</div>
+			
+										<div class="custom-control custom-checkbox mb-3">
+											<input type="checkbox" class="custom-control-input" id="customCheck1">
+											<label class="custom-control-label" for="customCheck1">Remember password</label>
+										</div>
+										<div>
+											<button class="btn btn-lg btn-primary btn-block text-uppercase">Login</button>
+											<hr class="my-4">
+											Don't have an Account?
+											<span class="text-uppercase btn-switch text-yellow">Registraion</span>
+										</div>
+									</form>
+								</div>
+								<div class="card-body registraion">
+									<h5 class="card-title text-center">Registraion</h5>
+									<form class="form-signin">
+											<div class="form-label-group">
+												<input type="text" id="inputname" class="form-control" placeholder="Name" required autofocus>
+												<label for="inputName">Name</label>
+											</div>
+										<div class="form-label-group">
+											<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+											<label for="inputEmail">Email address</label>
+										</div>
+			
+										<div class="form-label-group">
+											<input type="text" id="inputMobile" class="form-control" placeholder="Mobile" required>
+											<label for="inputMobile">Mobile</label>
+										</div>
+			
+										<div class="form-label-group">
+											<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+											<label for="inputPassword">Password</label>
+										</div>
+			
+										<div class="form-label-group">
+											<input type="password" id="inputRePassword" class="form-control" placeholder="Re Enter Password" required>
+											<label for="inputRePassword">Re Enter Password</label>
+										</div>
+			
+										<div class="custom-control custom-checkbox mb-3">
+											<input type="checkbox" class="custom-control-input" id="customCheck1">
+											<label class="custom-control-label" for="customCheck1">Remember password</label>
+										</div>
+										<div>
+											<button class="btn btn-lg btn-google btn-block text-uppercase">Registraion</button>
+											<hr class="my-4">
+											Yes, I have an Account!!
+											<span class="text-uppercase btn-switch text-yellow">Login</span>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="./libs/js/jquery-3.3.1.min.js"></script>
+<script src="./libs/js/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+<script src="./js/script.js"></script>
+<script src="./js/custom-map.js"></script>
+
+</html>
