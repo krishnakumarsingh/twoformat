@@ -48,6 +48,15 @@ body {
 .navbar.nav-scrolled {
   background: #fff;
 }
+.nav-scrolled-top {
+  background: #fff;
+}
+.navbar.nav-scrolled-top .navbar-nav .nav-link {
+  color: #1cc8e1;
+}
+.direct-page.mbr-section {
+  padding-top: 11.2rem;
+}
 .navbar .navbar-caption img {
   width:260px;
   transition: all 0.45s ease-in-out;
@@ -372,6 +381,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display-1, .display-2, .d
 }
 .mbr-section-full .mbr-overlay {
   /*min-height: 100vh;*/
+}
+.mbr-section-nopadding-all {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
 }
 .mbr-section-nopadding {
   padding-top: 0;
