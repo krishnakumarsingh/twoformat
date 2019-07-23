@@ -33,7 +33,7 @@
 		<link href="./css/parallax.css" rel="stylesheet" />
 </head>
 <body>
-	<nav class="navbar navbar-dropdown navbar-fixed-top nav-scrolled-top" style="box-shadow: 0px 0px 5px 0;">
+	<nav class="navbar navbar-dropdown navbar-fixed-top nav-scrolled-top direct-page">
 		<div class="container">
 			<div class="mbr-table">
 				<div class="mbr-table-cell">
@@ -49,19 +49,19 @@
 					</button>
 					<ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm MontserratBold" id="exCollapsingNavbar">
 						<li class="nav-item">
-							<a class="nav-link link" href="#about_us">About us</a>
+							<a class="nav-link link" href="#">About us</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link link" href="#services">
+							<a class="nav-link link" href="index.html#services">
 								<span style="font-weight: normal;">Service</span>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link link" href="#contact_us">
+							<a class="nav-link link" href="index.html#contact_us">
 								<span style="font-weight: normal;">Contact us</span>
 							</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item d-none">
 							<a class="nav-link link" href="#" data-toggle="modal" data-target="#myModal">
 								<i class='fas fas fa-user'></i> &nbsp; &nbsp;Login
 							</a>
@@ -74,7 +74,7 @@
 			</div>
 		</div>
 	</nav>
-	<section id="about_us" class="page-section">
+	<section id="about_us" class="page-section about_us">
 		<div class="mbr-section mbr-section__container article direct-page">
 			<div class="container">
 				<div class="row">
@@ -84,6 +84,12 @@
 							<hr class="brdr" />
 						</h2>
 						<h3 class="mbr-section-title display-2 Montserrat h3-head-sec">Story about us</h3>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 w-100 header-sec">
 						<p class="sec-para Roboto">2Formatics Solutions is a data intelligence and marketing automation company formed by a bunch of professionals who have spent 10+ years in the same vertical and helped customer maximizing ROI.We are customer oriented company and our only focus is customer satisfaction.
 							We serve customers from all verticals across the globe with our data intelligence and marketing automation solutions to achieve maximum ROI by saving time,cost and effort. We have partnered with many brands which are located across the globe,to make sure we deliver the best in the industry.
 						</p>
@@ -91,7 +97,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="mbr-cards mbr-section mbr-section-nopadding-b">
+		<div class="container-fluid">
+			<div class="row">
+				<img class="img-fluid" src="./images/vision-mission.jpg" />
+			</div>
+		</div>
+		<div class="mbr-cards mbr-section mbr-section-nopadding-b mbr-section-nopadding-t">
 			<div class="container d-none">
 				<div class="row">
 					<div class="card-group col-sm-12">
@@ -114,9 +125,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="mbr-cards mbr-section mbr-section-nopadding-b1" id="vision" style="background-color: #fff; box-shadow: inset 0px 0px 5px 0;">
+			<div class="mbr-cards mbr-section mbr-section-nopadding-b1 vision" id="vision">
 				<div class="container">
-					<div class="row" style="background-image: url('./images/vision-mission.jpeg');background-repeat: no-repeat;background-position: right bottom;">
+					<div class="row bg-img bg-vision1">
 						<div class="mbr-cards mbr-section mbr-section-nopadding-b">
 							<div class="container">
 								<h2>Vision</h2>
