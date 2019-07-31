@@ -1,4 +1,5 @@
 $(function () {
+    //AIzaSyCtvPRlQ4502OUC-bQVr5mTdcM1W1O5wN8
     function initMap(lat, lad, head, conContent) {
         var location = new google.maps.LatLng(lat, lad);
         var mapCanvas = document.getElementById('map');

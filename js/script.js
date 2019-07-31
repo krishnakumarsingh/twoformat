@@ -9,7 +9,7 @@ $(function() {
   $('#main_slide .carousel-item').each(function(i, j) {
     console.log(i, j);
     var vImgSrc = $(j).find('img').attr('src');
-    $(j).find('img').css({'visibility': 'hidden'});
+    $(j).find('img.d-none').css({'visibility': 'hidden'});
     if(!$(j).hasClass('slider-2')){
       $(j).css({'background': '#3d566e'});
     } else {
