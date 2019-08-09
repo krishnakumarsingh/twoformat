@@ -84,3 +84,31 @@ $(function() {
     $('.carousel-item').eq(0).addClass('active');
   }, 1000);
 });
+$('#submit-form').click(function(){
+  $.ajax({  
+    type: 'POST',  
+    url: 'email.php', 
+    data: {
+      name: $('#form1-2h-name').val(),
+      email: $('#form1-2h-email').val(),
+      phone: $('#form1-2h-phone').val(),
+      message: $('#form1-2h-message').val(),
+    },
+    success: function(response) {
+      console.log(response);
+      $('#message-show').html(response);
+      $('#form1-2h-name').val('');
+      $('#form1-2h-email').val('');
+      $('#form1-2h-phone').val('');
+      $('#form1-2h-message').val('');
+      setTimeout(function() {
+        $('#message-show').fadeOut(1000, function() {
+          $('#message-show').html('');
+        });
+      }, 400);
+    }
+  });
+});
+$('#exCollapsingNavbar').on('click', 'a', function() {
+  $('.navbar-toggler').trigger( "click" );
+});

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
@@ -25,12 +24,10 @@
 		<meta name="theme-color" content="#ffffff">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="./libs/css/bootstrap.min.css" />
-		<!-- <link rel='stylesheet'
-			href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
-			integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ'
-			crossorigin='anonymous'> -->
 		<link href="./css/style.css" rel="stylesheet" />
 		<link href="./css/parallax.css" rel="stylesheet" />
+		<script src="./libs/js/jquery-3.3.1.min.js"></script>
+		<script src="./libs/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-dropdown navbar-fixed-top">
@@ -44,7 +41,7 @@
 					</div>
 				</div>
 				<div class="mbr-table-cell">
-					<button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+					<button class="navbar-toggler pull-xs-right hidden-md-up collapsed" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
 						<div class="hamburger-icon"></div>
 					</button>
 					<ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm MontserratBold" id="exCollapsingNavbar">
@@ -59,11 +56,6 @@
 						<li class="nav-item">
 							<a class="nav-link link" href="#contact_us">
 								<span style="font-weight: normal;">Contact us</span>
-							</a>
-						</li>
-						<li class="nav-item d-none">
-							<a class="nav-link link" href="#" data-toggle="modal" data-target="#myModal">
-								<i class='fas fas fa-user'></i> &nbsp; &nbsp;Login
 							</a>
 						</li>
 					</ul>
@@ -83,7 +75,7 @@
 							<div class="row">
 								<div class="col-md-6 text-xs-center animated-text">
 									<h1 class="mbr-section-title display-1 KaushanScript mt-title-4">Buying Center?</h1>
-									<div class="mbr-section-btn animated-text-2"><a class="btn btn-lg btn-secondary-outline border-white btn-secondary" href="">LEARN MORE</a></div>
+									<div class="mbr-section-btn animated-text-2"><a class="btn btn-lg btn-secondary-outline border-white btn-secondary" href="./get-buying-center-insight.html">LEARN MORE</a></div>
 								</div>
 								<div class="col-md-6">
 									<ul class='circle-container'>
@@ -118,8 +110,8 @@
 							<div class="row">
 								<div class="col-md-6 text-xs-center animated-text">
 									<h1 class="mbr-section-title display-1 KaushanScript mt-title-4" style="text-align: left;">Data Quality?</h1>
-									<p class="mbr-section-lead lead Montserrat" style="text-align: left;font-size: 24px;line-height: 24px;">While many organizations boast of having good data or improving the quality of their data.</p>
-									<div class="mbr-section-btn animated-text-2" style="text-align: left;"><a class="btn btn-lg btn-secondary-outline border-white btn-secondary" href="">LEARN MORE</a></div>
+									<p class="mbr-section-lead lead Montserrat" style="text-align: left;font-size: 24px;line-height: 24px;">While many organizations boast of having good data or improving the quality of their data, we believe customer's data should be properly oriented, shorted & simplified.</p>
+									<div class="mbr-section-btn animated-text-2" style="text-align: left;"><a class="btn btn-lg btn-secondary-outline border-white btn-secondary" href="./database-management.html">LEARN MORE</a></div>
 								</div>
 							</div>
 						</div>
@@ -135,7 +127,7 @@
 							<div class="row">
 								<div class="col-md-12 text-xs-center animated-text">
 									<h1 class="mbr-section-title display-1 KaushanScript mt-title-2">Web Development</h1>
-									<div class="mbr-section-btn animated-text-2"><a class="btn btn-lg btn-secondary-outline border-white btn-secondary" href="">LEARN MORE</a></div>
+									<div class="mbr-section-btn animated-text-2"><a class="btn btn-lg btn-secondary-outline border-white btn-secondary" href="./website-development.html">LEARN MORE</a></div>
 								</div>
 								<div class="col-md-12 img-responsive-design">
 									<img class="laptop-img" src="./images/laptop-ui.png" />
@@ -206,37 +198,6 @@
 		</div>
 	</section>
 	<hr/>
-	<section id="counter_jobs" class="page-section mbr-cards mbr-section mbr-section-nopadding-b d-none">
-		<div class="counter-bg">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-3 col-sm-3">
-						<div class="number-wrap Montserrat">
-							<h2>42</h2>
-							<p>Web Design Projects</p>
-						</div>
-					</div>
-					<div class="col-xs-3 col-sm-3">
-						<div class="number-wrap Montserrat">
-							<h2>123</h2>
-							<p>happy client</p>
-						</div>
-					</div>
-					<div class="col-xs-3 col-sm-3">
-						<div class="number-wrap Montserrat">
-							<h2>15</h2>
-							<p>award winner</p>
-						</div>
-					</div>
-					<div class="col-xs-3 col-sm-3">
-						<div class="number-wrap Montserrat">
-							<h2>99</h2>
-							<p>cup of coffee</p>
-					</div>
-			</div>
-		</div>
-	</section>
-	<hr/>
 	<section id="services" class="page-section">
 		<div class="mbr-section mbr-section__container article mbr-section-nopadding-b">
 			<div class="container">
@@ -252,53 +213,66 @@
 				</div>
 			</div>
 		</div>
-		<div class="mbr-cards mbr-section mbr-section-nopadding-b">
+		<br/>
+		<div class="mbr-cards mbr-section mbr-section-nopadding-b mob-pad-t">
 			<div class="container">
 				<div class="row">
 					<div class="card-group three-card1 col-sm-12">
 						<div class="card mr-md-3 ml-md-3 mr-sm-1 ml-sm-1 col-xs-12 rounded-0">
+							<a href="./get-buying-center-insight.html">
 							<div class="overlay-card-img-top hvr-bounce-to-top">
 								<div class="text-card">Get Buying Center Insight</div>
 							</div>
 							<img class="card-img-top" src="./images/get-buying-center-insight.jpg" alt="Photo by Atanas Paskalev on Unsplash" />
+							</a>
 						</div>
 						<div class="card mr-md-3 ml-md-3 mr-sm-1 ml-sm-1 col-xs-12 rounded-0">
+							<a href="./managed-marketing-database.html">
 							<div class="overlay-card-img-top hvr-bounce-to-top">
 								<div class="text-card">Managed Marketing Database</div>
 							</div>
 							<img class="card-img-top" src="./images/managed-marketing-database.jpg" alt="Photo by Adeolu Eletu on Unsplash" />
+							</a>
 						</div>
 						<div class="card mr-md-3 ml-md-3 mr-sm-1 ml-sm-1 col-xs-12 rounded-0">
+							<a href="./competitive-intelligence.html">
 							<div class="overlay-card-img-top hvr-bounce-to-top">
 								<div class="text-card">Competitive Intelligence</div>
 							</div>
 							<img class="card-img-top" src="./images/competitive-intelligence.jpg" alt="Photo by Franck V. on Unsplash" />
+							</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="mbr-cards mbr-section mbr-section-nopadding-b">
+		<div class="mbr-cards mbr-section mbr-section-nopadding-b mob-pad-t">
 			<div class="container">
 				<div class="row">
 					<div class="card-group three-card1 col-sm-12">
 						<div class="card mr-md-3 ml-md-3 mr-sm-1 ml-sm-1 col-xs-12 rounded-0">
+							<a href="./digital-marketing.html">
 							<div class="overlay-card-img-top hvr-bounce-to-top">
 								<div class="text-card">Digital Marketing</div>
 							</div>
 							<img class="card-img-top" src="./images/digital-marketing.jpg" alt="Photo by rawpixel.com from Pexels" />
+							</a>
 						</div>
 						<div class="card mr-md-3 ml-md-3 mr-sm-1 ml-sm-1 col-xs-12 rounded-0">
+							<a href="./database-management.html">
 							<div class="overlay-card-img-top hvr-bounce-to-top">
 								<div class="text-card">Database Management</div>
 							</div>
 							<img class="card-img-top" src="./images/database-management.jpg" alt="Photo by rawpixel.com from Pexels" />
+							</a>
 						</div>
 						<div class="card mr-md-3 ml-md-3 mr-sm-1 ml-sm-1 col-xs-12 rounded-0">
+							<a href="./website-development.html">
 							<div class="overlay-card-img-top hvr-bounce-to-top">
 								<div class="text-card">Website Development</div>
 							</div>
 							<img class="card-img-top" src="./images/website-development.jpg" alt="Photo by Pixabay from Pexels" />
+							</a>
 						</div>
 					</div>
 				</div>
@@ -318,9 +292,7 @@
 							<hr class="brdr" />
 						</h2>
 						<h3 class="mbr-section-title display-2 Montserrat h3-head-sec text-white">CONTACT FORM</h3>
-						<p class="sec-para Roboto text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-							magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-							consequat. </p>
+						<p class="sec-para Roboto text-white">Found our services interesting. Interested in business with us. <br/>Do Contact us!!! </p>
 					</div>
 				</div>
 			</div>
@@ -331,8 +303,8 @@
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 18.5204, lng: 73.8567},
-          zoom: 8
+          center: {lat: 12.925453, lng: 77.546761},
+          zoom: 20
         });
       }
 		</script>
@@ -351,49 +323,49 @@
 				<div class="row">
 					<div class="col-sm-4 header-sec mbr-footer-content">
 						<p class="RobotoBold">
-							<strong class="Roboto">Office 1 Address</strong><br>
-							1234 Street Name<br>
-							City, AA 99999<br><br><br>
-							<strong class="Roboto">Office 2 Address</strong><br>
-							1234 Street Name<br>
-							City, AA 99999<br><br><br>
-							<strong class="Roboto">Contacts</strong><br>
-							Email: support@mobirise.com<br>
-							Phone: +1 (0) 000 0000 001<br>
-							Fax: +1 (0) 000 0000 002</p>
+							<p><strong class="Roboto">2FORMATICS SOLUTIONS PRIVATE LIMITED</strong></p>
+							<p>NO 70/A, 2ND Main, Kathriguppe East</p>
+							<p>BSK 3RD Stage, Bangalore</p>
+							<p>Karnataka, 560085,</p>
+							<p>India</p></br>
+							<p><strong class="Roboto">Contacts</strong></p>
+							<p>Email: info@2formatics.com<br></p>
+							<p>Phone: +91 974 3155 846</p></br>
+							<p><h6 class="Roboto">Web Development & Support</h6></p>
+							<p>Phone: +91 953 4080 086</p></br>
+						</br>
 					</div>		
 					<div class="col-sm-8" data-form-type="formoid">
-						<div data-form-alert="true">
-							<div hidden="" data-form-alert-success="true" class="alert alert-form alert-success text-xs-center">Thanks for filling out form!</div>
+						<div data-form-alert="true" id="message-show">
 						</div>
-						<form action="email.php" method="post" data-form-title="CONTACT FORM">
+						<form action="" method="post" data-form-title="CONTACT FORM">
 							<input type="hidden" value="" data-form-email="true" class="hidden animated">
 							<div class="row row-sm-offset">
 								<div class="col-xs-12 col-md-4">
 									<div class="form-group">
 										<label class="form-control-label text-white" for="form1-2h-name">Name<span class="form-asterisk">*</span></label>
-										<input type="text-card" class="form-control" name="name" required="" data-form-field="Name" id="form1-2h-name">
+										<input type="text-card" class="form-control" name="name"  required="required" data-form-field="Name" id="form1-2h-name">
 									</div>
 								</div>
 								<div class="col-xs-12 col-md-4">
 									<div class="form-group">
 										<label class="form-control-label text-white" for="form1-2h-email">Email<span class="form-asterisk">*</span></label>
-										<input type="email" class="form-control" name="email" required="" data-form-field="Email" id="form1-2h-email">
+										<input type="email" class="form-control" name="email"  required="required" data-form-field="Email" id="form1-2h-email">
 									</div>
 								</div>
 								<div class="col-xs-12 col-md-4">
 									<div class="form-group">
 										<label class="form-control-label text-white" for="form1-2h-phone">Phone</label>
-										<input type="tel" class="form-control" name="phone" data-form-field="Phone" id="form1-2h-phone">
+										<input type="tel" class="form-control" name="phone" required="required" data-form-field="Phone" id="form1-2h-phone">
 									</div>
 								</div>
 							</div>
 							<div class="form-group">
 									<label class="form-control-label text-white" for="form1-2h-message">Message</label>
-									<textarea class="form-control" name="message" rows="7" data-form-field="Message" id="form1-2h-message"></textarea>
+									<textarea class="form-control" name="message" rows="7" required="required" data-form-field="Message" id="form1-2h-message"></textarea>
 							</div>
 							<div>
-								<button type="submit" class="btn btn-black">
+								<button type="button" class="btn btn-black submit-form" id="submit-form">
 									<span class="btn-text">CONTACT US</span>
 									<i class="btn-loader"></i>
 								</button>
@@ -410,87 +382,6 @@
 			<p class="text-xs-center text-white mb-0">Copyright (c) 2019 2Formatics | <a href="license.txt" class="text-white">License</a></p>
 		</div>
 	</footer>
-	<div class="modal" id="myModal">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-sm-12">
-							<div class="row card card-signin">
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-								<div class="card-body login">
-									<h5 class="card-title text-center">Login</h5>
-									<form class="form-signin">
-										<div class="form-label-group">
-											<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-											<label for="inputEmail">Email address</label>
-										</div>
-			
-										<div class="form-label-group">
-											<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-											<label for="inputPassword">Password</label>
-										</div>
-			
-										<div class="custom-control custom-checkbox mb-3">
-											<input type="checkbox" class="custom-control-input" id="customCheck1">
-											<label class="custom-control-label" for="customCheck1">Remember password</label>
-										</div>
-										<div>
-											<button class="btn btn-lg btn-primary btn-block text-uppercase">Login</button>
-											<hr class="my-4">
-											Don't have an Account?
-											<span class="text-uppercase btn-switch text-yellow">Registraion</span>
-										</div>
-									</form>
-								</div>
-								<div class="card-body registraion">
-									<h5 class="card-title text-center">Registraion</h5>
-									<form class="form-signin">
-											<div class="form-label-group">
-												<input type="text" id="inputname" class="form-control" placeholder="Name" required autofocus>
-												<label for="inputName">Name</label>
-											</div>
-										<div class="form-label-group">
-											<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-											<label for="inputEmail">Email address</label>
-										</div>
-			
-										<div class="form-label-group">
-											<input type="text" id="inputMobile" class="form-control" placeholder="Mobile" required>
-											<label for="inputMobile">Mobile</label>
-										</div>
-			
-										<div class="form-label-group">
-											<input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-											<label for="inputPassword">Password</label>
-										</div>
-			
-										<div class="form-label-group">
-											<input type="password" id="inputRePassword" class="form-control" placeholder="Re Enter Password" required>
-											<label for="inputRePassword">Re Enter Password</label>
-										</div>
-			
-										<div class="custom-control custom-checkbox mb-3">
-											<input type="checkbox" class="custom-control-input" id="customCheck1">
-											<label class="custom-control-label" for="customCheck1">Remember password</label>
-										</div>
-										<div>
-											<button class="btn btn-lg btn-google btn-block text-uppercase">Registraion</button>
-											<hr class="my-4">
-											Yes, I have an Account!!
-											<span class="text-uppercase btn-switch text-yellow">Login</span>
-										</div>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 </body>
-<script src="./libs/js/jquery-3.3.1.min.js"></script>
-<script src="./libs/js/bootstrap.min.js"></script>
 <script src="./js/script.js"></script>
 </html>
