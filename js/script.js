@@ -105,3 +105,60 @@ $('#submit-form').click(function(){
 $('#exCollapsingNavbar').on('click', 'a', function() {
   $('.navbar-toggler').trigger( "click" );
 });
+$(function() {
+
+  var deg = 0;
+  var rotate = 1;
+  var club_rotate = setInterval(club_rotate, 50);
+  $('.circle-container-buying-center > li').not(".circle-container-buying-center > *:nth-of-type(8)").mouseenter(function() {
+      rotate = 0
+  });
+  $('.circle-container-buying-center > li').not(".circle-container-buying-center > *:nth-of-type(8)").mouseleave(function() {
+      rotate = 1
+  });
+  function club_rotate() {
+      if (rotate == 0) {
+          return
+      }
+      deg = get_deg(deg + 1);
+      var deg0 = deg;
+      var $data = $('.circle-container-buying-center').children().not(".circle-container-buying-center > *:nth-of-type(8)");
+      var length = 10;
+      if ($(window).width() <= 540) {
+          length = 7
+      }
+      $data.each(function() {
+          $(this).css("-webkit-transform", "rotate(" + deg0 + "deg) translate(" + length + "em) rotate(-" + deg0 + "deg)").css("transform", "rotate(" + deg0 + "deg) translate(" + length + "em) rotate(-" + deg0 + "deg)");
+          deg0 = get_deg(deg0 + 51)
+      })
+  }
+
+  function get_deg(deg0) {
+      if (deg0 > 360)
+          return (deg0 - 360);
+      else return deg0
+  }
+});
+setTimeout(() => {
+  var html = `
+  <div class="lodding-spinner">
+    <div class="center"></div>
+    <div class="inner-spin">
+      <div class="inner-arc inner-arc_start-a"></div>
+      <div class="inner-arc inner-arc_end-a"></div>
+      <div class="inner-arc inner-arc_start-b"></div>
+      <div class="inner-arc inner-arc_end-b"></div>
+      <div class="inner-moon-a"></div>
+      <div class="inner-moon-b"></div>
+    </div>
+    <div class="outer-spin">
+      <div class="outer-arc outer-arc_start-a"></div>
+      <div class="outer-arc outer-arc_end-a"></div>
+      <div class="outer-arc outer-arc_start-b"></div>
+      <div class="outer-arc outer-arc_end-b"></div>
+      <div class="outer-moon-a"></div>
+      <div class="outer-moon-b"></div>
+    </div>
+  </div>`
+  $('body').append(html);
+}, 200);
